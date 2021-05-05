@@ -601,6 +601,7 @@ GameObject:
   - component: {fileID: 1013198466}
   - component: {fileID: 1013198468}
   - component: {fileID: 1013198467}
+  - component: {fileID: 1013198469}
   m_Layer: 5
   m_Name: Ring
   m_TagString: Untagged
@@ -625,7 +626,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 320, y: 336}
+  m_SizeDelta: {x: 320, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013198467
 MonoBehaviour:
@@ -640,7 +641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6462746, g: 0.44431373, b: 0.80784315, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -665,6 +666,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013198465}
   m_CullTransparentMesh: 1
+--- !u!225 &1013198469
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013198465}
+  m_Enabled: 1
+  m_Alpha: 0.5
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1161581087
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,9 +924,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837d86fe676cde840b9a897f7e4affa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pressedScale: {x: 0.95, y: 0.95}
+  m_pressedScale: {x: 1, y: 1}
   m_tweenInDuration: 0.025
   m_tweenOutDuration: 0.025
+  ring: {fileID: 1013198469}
   m_locked: 0
 --- !u!114 &1466800145
 MonoBehaviour:
